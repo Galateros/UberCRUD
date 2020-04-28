@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1078575120200",
+    "firebase_url": "https://ubertest-a13d3.firebaseio.com",
+    "project_id": "ubertest-a13d3",
+    "storage_bucket": "ubertest-a13d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1078575120200:android:3d3fe6ea1956aecb23fd7d",
+        "android_client_info": {
+          "package_name": "com.android.ubertest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1078575120200-53osllgpsjjkrq1h782v64ffrfk9k16o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.ubertest",
+            "certificate_hash": "ac09630964d7918dd02229a519fed0d1a9a62365"
+          }
+        },
+        {
+          "client_id": "1078575120200-qgo39arirsd48sctjtkh7rgirg9657ec.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnPdMjB0bzAGeav4bWP53TCjY5NQUKVmY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1078575120200-qgo39arirsd48sctjtkh7rgirg9657ec.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
