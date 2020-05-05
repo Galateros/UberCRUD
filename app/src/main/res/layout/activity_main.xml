@@ -6,59 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/agrega_uno"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="agregaItem"
-        android:text="Agrega"
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.android.ubertest.fragmentos.AltaFragment"
+        android:layout_width="387dp"
+        android:layout_height="196dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029" />
 
-    <Button
-        android:id="@+id/remove"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="quitaItem"
-        android:text="Remove"
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.android.ubertest.fragmentos.ListaDespensaFragment"
+        android:layout_width="388dp"
+        android:layout_height="224dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment"
+        app:layout_constraintVertical_bias="0.138" />
+
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="com.android.ubertest.fragmentos.BorrarFragment"
+        android:layout_width="384dp"
+        android:layout_height="186dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/agrega_uno" />
-
-    <Button
-        android:id="@+id/modifica"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="updateItem"
-        android:text="Modifica"
-        app:layout_constraintBottom_toTopOf="@+id/remove"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/agrega_uno"
-        app:layout_constraintVertical_bias="0.555" />
-
-    <Button
-        android:id="@+id/todos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="getAllitems"
-        android:text="ObtenTodos"
-        app:layout_constraintBottom_toTopOf="@+id/agrega_uno"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/borraTodo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="borraItems"
-        android:text="borraTodo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/remove" />
+        app:layout_constraintTop_toBottomOf="@+id/fragment2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
